@@ -5,6 +5,16 @@ var line_color = "black";
 var line_width = "3";
 var fill_color = "orange";
 
+function undo() {
+    Liex.removeChild(Liex.firstChild);
+}
+
+function clear_all() {
+    while (Liex.firstChild) {
+        undo();
+    }
+}
+
 function line(x1, y1, x2, y2) {
     const line = document.createElementNS(svg_ns, "line");
     line.setAttribute("x1", x1);
