@@ -1,4 +1,6 @@
-const Liex = document.getElementById("Liex");  // a SVG tag fyifydk
+import { matrix, multiply, transpose } from 'mathjs';
+
+const Liex = document.getElementById("Liex");  // a SVG tag iydk
 const svg_ns = "http://www.w3.org/2000/svg";
 
 var line_color = "black";
@@ -25,4 +27,6 @@ function line(x1, y1, x2, y2) {
     line.setAttribute("stroke-width", line_width);
     Liex.appendChild(line);
 }
+
+function
 
