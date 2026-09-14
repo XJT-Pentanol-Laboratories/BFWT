@@ -1,5 +1,18 @@
 const Liex = document.getElementById("Liex");
 const svg_ns = "http://www.w3.org/2000/svg";
 
+var line_color = "black";
+var line_width = "3";
+var fill_color = "orange";
 
+function line(x1, y1, x2, y2) {
+    const line = document.createElementNS(svg_ns, "line");
+    line.setAttribute("x1", x1);
+    line.setAttribute("y1", y1);
+    line.setAttribute("x2", x2);
+    line.setAttribute("y2", y2);
+    line.setAttribute("stroke", line_color);
+    line.setAttribute("stroke-width", line_width);
+    Liex.appendChild(line);
+}
 
