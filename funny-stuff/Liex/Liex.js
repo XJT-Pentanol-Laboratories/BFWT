@@ -1,4 +1,4 @@
-const Liex = document.getElementById("Liex");
+const Liex = document.getElementById("Liex");  // a SVG tag fyifydk
 const svg_ns = "http://www.w3.org/2000/svg";
 
 var line_color = "black";
